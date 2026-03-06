@@ -133,7 +133,6 @@
 # string="     hello django        "
 # print(string)
 # print(string.strip())
-
 # string="--------hello django--------"
 # print(string.strip('-'))
 
@@ -287,3 +286,38 @@
 """rpartition()"""
 # s="my name is yaseen"
 # print(s.rpartition(" "))                            #('my name is', ' ', 'yaseen')
+
+
+
+"""----------- 6.Encoding and Decoding-----------"""
+
+"""encode()"""      
+# s="hello"                                               #convert string to byte code
+# print(s.encode())                                       #b'hello'
+# print(s.encode(encoding="utf-8",errors="strict"))            
+
+
+"""encode()"""  
+# s="hello"                                               #convert string to byte code
+# encode_s=s.encode()
+# print(encode_s)                                         #b'hello'
+# decode_s=encode_s.decode()                              
+# print(decode_s)                                         #hello
+
+
+
+"""----------- 6.Miscellaneous -----------"""
+
+"""expandtabs()"""
+# print("hello \t python")
+# print("hello \t python".expandtabs(10))
+# print("hello \t python".expandtabs(23))  
+            #syntax:-  [spases=tabsize-(current_position / tabsize)]
+# print(len("hello \t python".expandtabs(34)))
+# print(len("hello \t python".expandtabs(24)))
+# print(len("hello \t python".expandtabs(10)))          
+
+
+"""translate()"""
+s="yaseen"
+print(s.translate())
