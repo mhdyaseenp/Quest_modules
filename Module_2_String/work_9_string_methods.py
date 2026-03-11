@@ -78,7 +78,7 @@
 
 # • 15. Remove leading and trailing spaces from a string.
 # ch="        yaseen        "
-# print(ch.strip())
+# rint(ch.strip())
 
 
 """Intermediate Level"""
@@ -191,7 +191,7 @@
 
 
 # • 3. Remove duplicate characters from a string.
-# ch="yaseen"
+# ch="yaseennppn"
 # result=""
 # for i in ch:
 #     if i not in result:
@@ -213,7 +213,8 @@
 # print("Frequency:", max_count)
 
 
-# • 5. Check if two strings are anagrams.
+
+# • 5. Check if two strings are anagrams.   
 # s1 = input("Enter first string: ")
 # s2 = input("Enter second string: ")
 # # ch1=s1.upper()
@@ -226,26 +227,130 @@
 
 
 # • 6. Reverse each word in a sentence without reversing the sentence order.
+# s="Hello World Python"
+# word=s.split()
+# reves=""
+# for w in word:
+#     reves+=w[::-1]+" "
+# print(reves)
+
+
 # • 7. Find the longest word in a sentence.
+# s=input("Sentence :")
+# words=s.split()
+# longest=words[0]
+# for word in words:
+#     if len(word) > len(longest):
+#         longest=word
+# print(longest)
+
+
 # • 8. Compress a string (example: aaabb → a3b2).
+# ch=input("Enter :") 
+# result=""
+# for i in ch:
+#     if i not in result:
+#         count=ch.count(i)
+#         result=result + i + str(count)
+# print(result)
+
+
 # • 9. Remove all spaces from a string.
+# s=input("Sentence :")
+# result=""
+# for ch in s:
+#     if ch !=" ":
+#         result+=ch
+# print(result)
+
+
 # • 10. Convert the first letter of every word to uppercase without using title().
+# s=input("Sentence :")
+# result=""
+# words=s.split()
+# for word in words:
+#     result=result+word[0].upper()+word[1:]+" "
+# print(result)
+
+
 # • 11. Extract digits from a string and store them separately.
+# s="anbf8385"
+# digit=""
+# for ch in s:
+#     if ch.isdigit():
+#         digit+=ch
+# print(digit)
+
+
 # • 12. Count the number of words in a sentence.
+# s="anbf8385"
+# words=""
+# for ch in s:
+#     if ch.isalpha():
+#         words+=ch
+# print(words)
+
+
 # • 13. Replace multiple spaces with a single space.
+# s = "Python   is    easy  to   learn"
+# result = " ".join(s.split())
+# print(result)
+
+
 # • 14. Check whether a string contains special characters.
+# s="anbf2@#@8385"
+# words=""
+# for ch in s:
+#     if not ch.isalnum():
+#         words+=ch
+# print(words)
+
+
 # • 15. Find the ASCII value of each character.
+# s = "yaseen"
+# for ch in s:
+#     print(ch, "=", ord(ch))
+
+ 
 # Advanced / Real-world Tasks
 # • 1. Encode and decode a string.
 # • 2. Create a translation table using maketrans() and translate characters.
+s=input("Enter :")
+# print(s.translate({121:"¥",97:"丹",115:"丂",101:"⼹",110:"Ⓝ"}))  
+table = str.maketrans("abcdefghijk","ꥃᙫⓒᙄ⼹ꘘǤҤ𝔦ڶꝄ")                
+result = s.translate(table)
+print(result)
+
+# print(ord("¶"))             #
+# print(ord("§"))
+# print(ord("y"))
+# print(ord("¥"))
+# print(ord("n"))
+
+# table=s.maketrans("y")
 # • 3. Simulate a simple password validator using string methods.
 # • 4. Parse key-value pairs from a string like 'name=John;age=25'.
 # • 5. Implement a simple email validation using string methods.
 # • 6. Extract hashtags from a text.
 # • 7. Mask sensitive data like phone numbers.
 # • 8. Implement basic text formatting similar to markdown.
+
 # • 9. Check if a sentence is a pangram.
+# s=input("enter :")
+# alphabets="abcdefghijklmnopqrsvwxyz"
+# for ch in alphabets:
+#     if ch not in s.lower():
+#         print("Not an pangram")
+#         break
+# else:
+#     print("pangram")
+
+
 # • 10. Sort characters in a string alphabetically.
+# s="yaseen"
+# sort=sorted(s)
+# print("".join(sort))
+
 # Interview-Oriented Questions
 # • 1. Explain the difference between find() and index() with code.
 # • 2. Explain the difference between split() and rsplit() with examples.
@@ -254,5 +359,5 @@
 # • 5. Check whether two strings are rotations of each other.
 
 
-
-
+# s="fhfb dfh nfndk fnf"
+# print(s.split())

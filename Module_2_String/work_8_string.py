@@ -5,7 +5,7 @@
 # 1.  Write a Python program to take a string from the user and print the
 #     first character using slicing.
 # name=input("Enter your name :")
-# print(name[:1])
+# print(name[0])
 
 # 2.  Write a program to display the last character of a string using
 #     slicing.
@@ -219,7 +219,7 @@
 #     original string.
 
 # NOTE FOR STUDENTS:
-
+ 
 # • Python string slicing format: string[start : end : step] • Start index
 # is inclusive, end index is exclusive • Step defines the jump between
 # characters • Strings are immutable in Python

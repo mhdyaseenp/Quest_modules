@@ -56,9 +56,9 @@
 
 
 # First non repeating charecter in string
-s = "pprogramming"
+# s = "pprogramming"
 
-for ch in s:
-    if s.count(ch) == 1:
-        print("First non repeating character:", ch)
-        break
+# for ch in s:
+#     if s.count(ch) == 1:
+#         print("First non repeating character:", ch)
+#         break
