@@ -309,8 +309,8 @@
 """----------- 8.Miscellaneous -----------"""
 
 """expandtabs()"""
-# print("hello \t python")
-# print("hello \t python".expandtabs(10))
+print("hello \t python")
+# print("hello \t python".expandtabs(10)
 # print("hello \t python".expandtabs(23))  
             #syntax:-  [spases=tabsize-(current_position / tabsize)]
 # print(len("hello \t python".expandtabs(34)))
@@ -332,7 +332,7 @@
 # print(ord("!"))
 # print(ord("1"))
 
-
+"""maketrans"""
 # s="xxxxyyyyyzzzzz"
 # table=s.maketrans('x','z',)                         #zzzzyyyyyzzzzz
 # print(s.translate(table))

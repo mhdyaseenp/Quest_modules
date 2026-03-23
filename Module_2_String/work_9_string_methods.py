@@ -205,7 +205,7 @@
 # max_count = 0
 # for ch in s:
 #     count = s.count(ch)
-#     print(ch,count)
+#     # print(ch,count)
 #     if count > max_count:
 #         max_count = count
 #         max_char = ch
@@ -315,11 +315,11 @@
 # Advanced / Real-world Tasks
 # • 1. Encode and decode a string.
 # • 2. Create a translation table using maketrans() and translate characters.
-s=input("Enter :")
-# print(s.translate({121:"¥",97:"丹",115:"丂",101:"⼹",110:"Ⓝ"}))  
-table = str.maketrans("abcdefghijk","ꥃᙫⓒᙄ⼹ꘘǤҤ𝔦ڶꝄ")                
-result = s.translate(table)
-print(result)
+# s=input("Enter :")
+# # print(s.translate({121:"¥",97:"丹",115:"丂",101:"⼹",110:"Ⓝ"}))  
+# table = str.maketrans("abcdefghijk","ꥃᙫⓒᙄ⼹ꘘǤҤ𝔦ڶꝄ")                
+# result = s.translate(table)
+# print(result)
 
 # print(ord("¶"))             #
 # print(ord("§"))
