@@ -152,3 +152,24 @@
 
 # print("Largest =", large)
 # print("Second Largest =", s_large)
+
+
+"""Unpaking"""
+# sample=['apple','banana','mango']
+# x,y,z=sample
+# print(x)                  #apple
+# print(y)                  #banana
+# print(z)                  #mango
+
+# sample=['apple','banana','mango','grape']
+# x,y,z=sample
+# print(x)
+# print(y)                  
+# print(z)                  #error
+
+
+# sample=['apple','banana','mango','grape']
+# *x,y,z=sample
+# print(x)                  #['apple', 'banana']
+# print(y)                  #banana
+# print(z)                  #mango
