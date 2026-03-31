@@ -251,13 +251,57 @@
 #         print(j,end=" ")
 #     print()
 
-
 # 32. Write a program to add two matrices using nested lists.
+# A = [[1, 2, 3],[4, 5, 6]]
+# B = [[7, 8, 9],[1, 2, 3]]
+
+# result = []
+# for i in range(len(A)): 
+#     row = []
+#     for j in range(len(A[0])): 
+#         row.append(A[i][j] + B[i][j])
+#     result.append(row)
+# # print(result)
+# for r in result:
+#     print(r)
 
 # 33. Write a program to transpose a matrix.
+# matrix = [[1, 2, 3],
+#           [4, 5, 6]]
+# transpose = []
+# for i in range(len(matrix[0])):  
+#     row = []
+#     for j in range(len(matrix)):  
+#         row.append(matrix[j][i])
+#     transpose.append(row)
+# print(transpose)
+# for row in transpose:
+#     print(row)
+
 # 34. Flatten a 2D list into a single list using list comprehension.
+# matrix = [[1, 2, 3],
+#         [4, 5, 6]]
+# flat=[]
+# for i in matrix:
+#     for j in i:
+#         flat.append(j)
+# print(flat)
+# flat = [j for i in matrix for j in i]
+# print(flat)
+
+
 # 35. Find the largest sublist length in a nested list.
+# list=[[12,34,5,4,6],[34,5,6],[4,46,6,4,6,4,6],[5,45],[45,5,65,4]]
+# max_length=0
+# for i in list:
+#     if len(i)>max_length:
+#         max_length=len(i)
+# print(max_length)
+
+
 # 36. Write a program to find the intersection of multiple lists.
+
+
 # 37. Write a program to group list elements by their length (strings).
 # 38. Implement a simple stack using a Python list.
 # 39. Implement a queue using a Python list.

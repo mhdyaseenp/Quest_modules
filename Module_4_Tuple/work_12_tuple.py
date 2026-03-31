@@ -5,7 +5,7 @@
 
 # 2. Write a script to check the type of a tuple with a single element. Show the difference
 # between (5) and (5,).
-
+ 
 # 3. Access the last element of a tuple without knowing its length.
 
 # 4. Access the second to last element of a tuple using negative indexing.
