@@ -177,8 +177,8 @@
 
 
 # 24. Find the sum of all elements in a list without using sum().
-# num=[1,2,3]
-# total=0
+num=[1,2,3]
+total=0
 # for i in num:
 #     total+=i
 # print(total)
