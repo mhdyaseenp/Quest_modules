@@ -177,8 +177,8 @@
 
 
 # 24. Find the sum of all elements in a list without using sum().
-num=[1,2,3]
-total=0
+# num=[1,2,3]
+# total=0
 # for i in num:
 #     total+=i
 # print(total)
@@ -303,7 +303,10 @@ total=0
 
 
 # 37. Write a program to group list elements by their length (strings).
-# 38. Implement a simple stack using a Python list.
+# 38. Implement a simple stack using
+    # for j in range(i + 1, len(nums)):
+    #     if nums[i] + nums[j] == target:
+    #         pairs.append((nums[i], nums[j])) a Python list.
 # 39. Implement a queue using a Python list.
 # 40. Write a program to shuffle elements in a list.
 # 41. Write a program to find the kth largest element in a list.
@@ -318,8 +321,22 @@ total=0
 # 49. Find all pairs whose sum equals a given target value.
 # 50. Write a program to detect duplicates in a list.
 # 51. Given two lists, determine whether they contain the same elements regardless of order.
+# nums = [1, 2, 3, 1, 4, 2]
+# duplicates = set()
+# for num in nums:
+#     if nums.count(num) > 1:
+#         duplicates.add(num)
+# print(list(duplicates))
+
 # 52. Write a program to partition a list into even and odd numbers.
 # 53. Implement bubble sort using lists.
+# nums = [5, 2, 9, 1, 5, 6]
+# n = len(nums)
+# for i in range(n):
+#     for j in range(0, n - i - 1):
+#         if nums[j] > nums[j + 1]:
+#             nums[j], nums[j + 1] = nums[j + 1], nums[j]
+# print(nums)
 # 54. Implement selection sort using lists.
 # 55. Write a program to remove consecutive duplicate elements.
 """"# Section 5: Interview-Oriented Questions"""
@@ -333,3 +350,35 @@ total=0
 # 63. Write a program to remove duplicates while preserving order.
 # 64. Explain the difference between mutable and immutable data structures in Python.
 # 65. Write a Python program to simulate a simple task queue using lists.
+
+# nums = [2, 4, 3, 5, 7, 8]
+# target = 7
+
+# pairs = []
+
+# for i in range(len(nums)):
+
+# print(pairs)
+
+# nums = [1, 3, 2, 1, 4, 1, 3,3,3,3]
+# max_count = 0
+# element = 0
+# for num in nums:
+#     count = nums.count(num)
+#     if count > max_count:
+#         max_count = count
+#         element = num
+# print(element)
+
+
+# nums = [4, 5, 1, 2, 1, 2, 4]
+# for num in nums:
+#     if nums.count(num) == 1:
+#         print(num)
+        # break
+
+
+# nums = [0,1,0,3,0,12]
+# result = [x for x in nums if x != 0] + [0] * nums.count(0)
+# print(result)
+

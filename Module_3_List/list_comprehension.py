@@ -55,14 +55,11 @@
 # print(count)                                                                   # [5, 6, 6]
 
 
-
-
 # Vowels aneel capital letter . allengil Title 
 
 # list = ['apple','iron','jasil','Yaseen']
 # check = [i.upper() if i[0] in 'AEIOUaeiou' else i.title() for i in list]
 # print(check)
-
 
 
 
@@ -73,16 +70,10 @@
 
 
 
-
-
-
-
 # Print vowels only
 # list1 = 'programming'
 # vowels = [ i for i in list1 if i in 'AEIOUaeiou']
 # print(vowels).
-
-
 
 
 
@@ -95,6 +86,6 @@
 
 
 
-# number = ['1','2','3','4','5','6']
-# convert = [int (i) for i in number if i.isdigit() ]
-# print(convert)
+number = ['1','2','3','4','5','6','yas']
+convert = [int(i) for i in number if i.isdigit() ]
+print(convert)

@@ -125,3 +125,41 @@
 #     for j in range(len(matirxes[i])):
 #         print(matirxes[i][j],end=" ")
 #     print()
+
+
+
+# A = [[1, 2, 3],[4, 5, 6]]
+# B = [[7, 8, 9],[1, 2, 3]]
+
+# result=[]
+# for i in range(len(A)):
+#     row=[]
+#     for j in range(len(A[0])):
+#         row.append(A[i][j]+B[i][j])
+#     result.append(row)
+# for r in result:
+#     print(r)
+
+# matrix = [[1, 2, 3],
+#           [4, 5, 6]]
+# trans=[]
+
+# for i in range(len(matrix[0])):
+#     row=[]
+#     for j in range(len(matrix)):
+#         row.append(matrix[j][i])
+#     trans.append(row)
+# for r in trans:
+    # print(r)
+
+# matrix = [[1, 2, 3],
+#           [4, 5, 6]]
+# transpose = []
+# for i in range(len(matrix[0])):  
+#     row = []
+#     for j in range(len(matrix)):  
+#         row.append(matrix[j][i])
+#     transpose.append(row)
+# print(transpose)
+# for row in transpose:
+#     print(row)
