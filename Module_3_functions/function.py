@@ -116,3 +116,26 @@
             
 # even(2,23,5,35,53,2,23,22,4,6,8,10,1)
 # print(2,23,5,35,53,2,23,22,4,6,8,10,1)
+
+
+# x=25
+# def modify():
+    
+#     global x
+#     print(x)
+#     x=200
+    
+# modify()
+# print(x)
+
+
+# a=[12,3,3]
+# b=a
+# b.append(200)
+# print(a)
+
+# print(id(a))
+# print(id(b))
+
+
+

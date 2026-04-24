@@ -52,15 +52,35 @@
 
 """# Section B - Functions with Return Values"""
 # 1 Write a function to return the cube of a number.
+
+
 # 2 Write a function to return the reverse of a string.
+
+
 # 3 Write a function to count the number of vowels in a given string.
+
+
 # 4 Write a function to return the factorial of a number.
+
+
 # 5 Write a function to return the sum of digits of a number.
+
+
 # 6 Write a function to return the smallest element in a list.
+
+
 # 7 Write a function to return the second largest number in a list.
+
+
 # 8 Write a function to return the number of words in a sentence.
+
+
 # 9 Write a function to return True if a number is a palindrome, otherwise False.
+
+
 # 10 Write a function to return the common elements from two lists.
+
+
 """# Section C - Arguments Practice"""
 # 1 Write a function student_info(name, age, course) and call it using positional arguments.
 # 2 Write the same function and call it using keyword arguments.
