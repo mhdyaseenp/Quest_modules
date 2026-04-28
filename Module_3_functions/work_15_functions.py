@@ -52,46 +52,185 @@
 
 """# Section B - Functions with Return Values"""
 # 1 Write a function to return the cube of a number.
+# def qub(num):
+#     return num**3
+# print(qub(3))
 
 
 # 2 Write a function to return the reverse of a string.
+# def rev(str):
+#     return str[::-1]
+# print(rev("yaseen"))
 
 
 # 3 Write a function to count the number of vowels in a given string.
+# def vovel(str):
+#     vw="aeiou"
+#     couut=0
+#     for ch in str:
+#         if ch in vw:
+#             couut+=1
+#     return couut
+# print(vovel('yaseen'))
 
 
 # 4 Write a function to return the factorial of a number.
+# def fact(num):
+#     result=1
+#     for i in range(1,num+1):
+#         result*=i
+#     return result
+# print(fact(5))
+# def fact(num):
+#     if num==0 or num==1:
+#         return 1
+#     return num*fact(num-1)
+# print(fact(5))
 
 
 # 5 Write a function to return the sum of digits of a number.
+# def sum(n):
+    # result=0
+    # for i in range(1,n+1):
+    #     result+=i
+    # return result
+    
+#     if n ==0 or n==1:
+#         return 1
+#     return n+sum(n-1)
+# print(sum(3))    
 
 
 # 6 Write a function to return the smallest element in a list.
+# def small(lis):
+# #     a=sorted(lis)
+# #     return a[0]
+# # print(small([2,4,3,1]))
+#     if len(lis)==0:
+#         return "List is Empty"
+#     smallest=lis[0]
+#     for n in lis:
+#         if n < smallest:
+#             smallest=n
+#     return smallest
+    
+# s=list(map(int,input("Enter numbers :").split()))
+# print(small(s))
 
-
+# numbers = [int(i) for i in input("Enter numbers: ").split()]
+# numbers=list(map(int,input("Enter numbers :").split()))
+# print(numbers)
+    
+            
 # 7 Write a function to return the second largest number in a list.
+# def sec(lis):
+#     if len(lis)==0:
+#         return "List is Empty"
+#     first= second = lis[0]
+#     for num in lis:
+#         if num > first:
+#             second=first
+#             first=num
+#         elif num>second and num !=first:
+#             second=num
+#     if first==second:
+#         return "no second largest"
+#     return second
+# s=list(map(int,input("Enter numbers :").split()))
+# print(sec(s))
+
+# def sec(lis):
+#     if len(lis)==0:
+#         return "List is Empty"
+#     first= second = lis[0]
+#     for num in lis:
+#         if num < first:
+#             second = first
+#             first = num
+#         elif num < second and num != first:
+#             second = num
+#     if first == second:
+#         return "No second smallest"
+#     return second
+# s=list(map(int,input("Enter numbers :").split()))
+# print(sec(s))
 
 
 # 8 Write a function to return the number of words in a sentence.
-
-
+# def sent(s):
+#     count=0
+#     words=s.split()
+#     for w in words:
+#         count +=1
+#     return count
+# print(sent("helo gys wtsa ap"))
+    
+    
 # 9 Write a function to return True if a number is a palindrome, otherwise False.
+# def pal(n):
+#     s=str(n)
+#     return s ==s[::-1]
 
+# b=int(input(": "))
+# print(pal(b))
 
 # 10 Write a function to return the common elements from two lists.
-
+# def comm(list1,list2):
+#     result=[]
+#     for item in list1:
+#         if item in list2 and item not in result:
+#             result.append(item)
+#     return result
+# l1=list(map(int,input("Enter 1st numbers :").split()))
+# l2=list(map(int,input("Enter snd numbers :").split()))
+# print(comm(l1,l2))
 
 """# Section C - Arguments Practice"""
 # 1 Write a function student_info(name, age, course) and call it using positional arguments.
+# def student_info(name, age, course):
+#     print ("Name :",name)
+#     print ("Age :",age)
+#     print ("Course :",course)
+# student_info("Yaseen", 20, "Computer Science")
+
+
 # 2 Write the same function and call it using keyword arguments.
+# def student_info(name, age, course):
+#     print ("Name :",name)
+#     print ("Age :",age)
+#     print ("Course :",course)
+# student_info(age=20,name="Yaseen",  course="Computer Science")
+
+
 # 3 Write a function power(base, exp=2) that returns the power of a number using a default argument.
+# def power(base, exp=2):
+#     return base**exp
+# print(power(2,3))
+
+
 # 4 Write a function discount(price, percent=10) to calculate discounted price.
-# 5 Write a function introduce(name, city='Kochi') and test it with and without the city argument.
+def discount(price, percent=10):
+    dic=price-(price*percent/100)
+    return dic
+# print(discount(1000))
+# print(discount(345,15))
+
+
 # 6 Write a function that accepts any number of values using *args and returns their sum.
+
+
 # 7 Write a function that accepts any number of values using *args and returns the largest one.
+
+
 # 8 Write a function that accepts user details using **kwargs and prints each key-value pair.
+
+
 # 9 Write a function bill(item, quantity, price) and calculate total bill.
+
+
 # 10 Write a function marks_total(*marks) that returns total and average marks.
+
+
 """# Section D - String-Based Function Problems"""
 # 1 Write a function to check whether a string is a palindrome.
 # 2 Write a function to count uppercase and lowercase letters in a string.
