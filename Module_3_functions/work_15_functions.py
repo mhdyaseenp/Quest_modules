@@ -209,50 +209,336 @@
 
 
 # 4 Write a function discount(price, percent=10) to calculate discounted price.
-def discount(price, percent=10):
-    dic=price-(price*percent/100)
-    return dic
-# print(discount(1000))
+# def discount(price, percent=10):
+#     dic=price-(price*percent/100)
+#     return dic
+# # print(discount(1000))
 # print(discount(345,15))
 
 
 # 6 Write a function that accepts any number of values using *args and returns their sum.
-
+# def add(*args):
+#     total=0
+#     for i in args:
+#         total+=i
+#     return total
+# print(add(1,2,3))
 
 # 7 Write a function that accepts any number of values using *args and returns the largest one.
+# def largest(*args):
+#     larg=list(args)
+#     sort_lg=sorted(larg)
+#     return sort_lg[-1]
+# print(largest(2,3,4,5,22,43,1))
+
+
+# def largest(*args):
+#     larg=args[0]
+#     for num in args:
+#         if num>larg:
+#             larg=num
+#     return larg
+# print(largest(2,3,4,5,22,43,1))
+    
 
 
 # 8 Write a function that accepts user details using **kwargs and prints each key-value pair.
-
+# def keys(**kwargs):
+#     for k,v in kwargs.items():
+#         print( k,v)
+# keys(name="yaseen",place="Mlp")
+    
 
 # 9 Write a function bill(item, quantity, price) and calculate total bill.
+# def bill(item, quantity, price):
+#     total=quantity*price
+#     print(f"Item :{item}")
+#     print(f"Quantity :{quantity}")
+#     print(f"Price Per Item :{price}")
+#     print(f"Total bill :{total}")
+# # bill("pen",3,20)
+# itm=input("item :")
+# qnt=int(input("quantity :"))
+# pric=float(input("price :"))
+# bill(itm,qnt,pric)
+
 
 
 # 10 Write a function marks_total(*marks) that returns total and average marks.
+# def marks_total(*marks):
+#     total=0
+#     for i in marks:
+#         total+=i
+#     avg=total/len(marks)
+#     return total,avg
+# t,av=marks_total(80,32,4,54,3,44)
+# print("Total Mark :",t)
+# print("Average Mark :",av)
+
 
 
 """# Section D - String-Based Function Problems"""
 # 1 Write a function to check whether a string is a palindrome.
+# def palindrom(string:str):
+#     string=string.lower()
+#     if string==string[::-1]:
+#         return "Its is a palindrom"
+#     else:
+#         return "Not an palindrom"
+# st=input()
+# print(palindrom(st))
+
+
 # 2 Write a function to count uppercase and lowercase letters in a string.
+# def lowe_up(text:str):
+#     upper=0
+#     lower=0
+#     for ch in text:
+#         if ch.isupper():
+#             upper+=1
+#         elif ch.islower():
+#             lower+=1
+#     return upper,lower
+# tx=input(" :")
+# u,l=lowe_up(tx)
+# print("Uper case count :",u)
+# print("Lower case count :",l)
+
+
 # 3 Write a function to remove all spaces from a string.
+# def remspace(text:str):
+#     rem=text.split()
+#     join="".join(rem)
+#     print(join)
+# txt=input(". :")
+# remspace(txt)
+
+
+
 # 4 Write a function to find the frequency of a given character in a string.
+# def freq(text :str,char):
+#     tt=0
+#     for ch in text:
+#         if ch == char:
+#             tt+=1
+#     return tt
+# print(freq("hello world","l"))
+
+
 # 5 Write a function to convert the first letter of each word to uppercase.
+# def upper(text:str):
+#     return text.title()
+# print(upper("muhammed yaseen python"))
+    
+
 # 6 Write a function to replace all vowels in a string with '*'.
+# def vowel(text):
+#     vow="aeiouAEIOU"
+#     result=""
+#     for ch in text:
+#         if ch in vow:
+#             result+="*"
+#         else:
+#             result+=ch
+#     return result
+# print(vowel("yaseen"))
+
+
+
 # 7 Write a function to check whether two strings are anagrams.
+# def angram(str1:str,str2:str):
+#     str1=str1.replace(" ", "").lower()
+#     str2=str2.replace(" ", "").lower()
+    
+#     return sorted(str1) == sorted(str2)
+# print(angram("listen" ,"silent"))
+
+
 # 8 Write a function to return the longest word in a sentence.
+# def long(text:str):
+#     word=text.split()
+#     longest=word[0]
+#     for w in word:
+#         if len(w) > len(longest):
+#             longest=w
+#     return f"Longest word is : {longest}"
+# st=input(" :")
+# print(long(st))
+
+
 # 9 Write a function to count how many times a word appears in a sentence.
+# def cont(text:str,word:str):
+#     w=text.lower().split()
+#     word=word.lower()
+#     count=w.count(word)
+#     return f"'{word}' appears {count} times"
+# print(cont("iam jose mourinho and iam the coach of man united and iam a title winnwer","iam"))
+
+
 # 10 Write a function to split a sentence and return only words with length greater than 4.
+# def grate(text:str):
+#     res=""
+#     word=text.split()
+#     for w in word:
+#         if len(w)>4:
+#             res+=w+" "
+#     return res.strip()
+# print(grate("muh yaseen sachu"))
+            
+    
+# def grate(text:str):
+#     res=[]
+#     word=text.split()
+#     for w in word:
+#         if len(w)>4:
+#             res.append(w)
+#     return res
+# print(grate("muh yaseen sachu"))
+            
+    
+
+
 """# Section E - List-Based Function Problems"""
 # 1 Write a function to return only even numbers from a list.
+# def even(num:list):
+#     ev=[]
+#     for n in num:
+#         if n%2==0:
+#             ev.append(n)
+#     return ev
+
+# numbers=list(map(int,input("enter the list elements :").split()))
+# # print(numbers)
+# print(even(numbers))  
+
+# numbers = [int(i) for i in input ("enter element").split() ]
+# print(numbers)
+# data = input("enter the list elements : ").split()
+# print(data)
+# for i in data:
+#     numbers.append(int(i))
+
+# print(numbers)
+    
+
 # 2 Write a function to return only prime numbers from a list.
+# def isprme(numbers):
+#     primee=[]
+#     for num in numbers:
+#         if num>1:
+#             is_prime=True
+#             for i in range(2,num):
+#                 if num%i==0:
+#                     is_prime=False
+#                     break
+#             if is_prime:
+#                 primee.append(num)
+#     return primee
+# # numb=list(map(int,input("Numbers :").split()))
+# # numb=[i for i in range(1,100)]
+# # print(isprme(numb))
+# def isprme(numbers):
+#     primee=[]
+#     for num in numbers:
+#         if num>1:
+#             for i in range(2,num):
+#                 if num%i==0:
+#                     break
+#             else: 
+#                 primee.append(num)
+#     return primee
+# numb=[i for i in range(1,100)]
+# print(isprme(numb))
+
+
 # 3 Write a function to remove duplicates from a list without changing the order.
+# def dupe(numbers):
+#     dup=[]
+#     for i in numbers:
+#         if i not in dup:
+#             dup.append(i)
+#     return dup
+# lis=[int(i) for i in input("enter the list :").split()]
+# print(dupe(lis))
+
+
 # 4 Write a function to return the sum of all odd numbers in a list.
+# def odd(numbers):
+#     sum=0
+#     for i in numbers:
+#         if i%2==1:
+#             sum+=i
+#     return sum
+# lis=[int(i) for i in input("enter the list :").split()]
+# print(odd(lis))
+
+
 # 5 Write a function to find the index positions of a given element in a list.
+# def index(list:list,ind):
+#     ide=[]
+#     for i in range(len(list)):
+#         if list[i]==ind:
+#             ide.append(i)
+#     return ide
+# lis=[int(i) for i in input("enter the list :").split()]
+# num=int(input())
+# print(index(lis,num))
+
+
 # 6 Write a function to merge two lists and return a sorted result.
+# def merg(lis1,lis2):
+#     merged=lis1+lis2
+#     merged.sort()
+#     return merged
+# list1=[int(i) for i in input("enter the 1st list :").split()]
+# list2=[int(i) for i in input("enter the 2nd list :").split()]
+# print(merg(list1,list2))
+
+
 # 7 Write a function to count positive and negative numbers in a list.
+# def pos(numbers):
+#     negative_ct=0
+#     positve_ct=0
+#     for i in numbers:
+#         if i >0:
+#             positve_ct+=1
+#         else:
+#             negative_ct+=1
+#     return positve_ct,negative_ct
+# list1=[int(i) for i in input("enter the 1st list :").split()]
+# p,v=pos(list1)
+# print("positive ;",p)
+# print("negative ;",v)
+
+
 # 8 Write a function to return the maximum difference between two elements in a list.
+# def diffren(lis):
+#     # return max(lis)-min(lis)
+#     sr=sorted(lis)
+#     return sr[-1] - sr[0]
+# list1=[int(i) for i in input("enter the 1st list :").split()]
+# print(diffren(list1))
+
 # 9 Write a function to rotate a list to the right by one position.
+# def rotate(lis):
+#     if len(lis)==0:
+#         return lis
+#     return [lis[-1]]+lis[:-1]
+# list1=[int(i) for i in input("enter the 1st list :").split()]
+# print(rotate(list1))
+
+
 # 10 Write a function to return a new list containing squares of all elements.
+# def sqr(lis):
+#     squares=[]
+#     for i in lis:
+#         sq=i**2
+#         squares.append(sq)
+#     return squares
+# list1=[int(i) for i in input("enter the 1st list :").split()]
+# print(sqr(list1))
+
+
 """# Section F - Number Logic Function Problems"""
 # 1 Write a function to check whether a number is prime.
 # 2 Write a function to generate the Fibonacci series up to n terms.
