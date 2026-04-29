@@ -591,3 +591,11 @@
 # 5 Build a small text-based calculator app using reusable functions.
 # Tip for Students: Try solving each question first without looking at old code. Focus on function design, input
 # handling, return values, and clean logic.
+
+
+# def add(num1):
+#     return num1**2
+# print(add(2))
+# list1=[1,2,4,5,78]
+# result=list(map(add,list1))
+# print(result)
