@@ -79,7 +79,6 @@
 
 
 """5 - Higher order Fuction"""
-
 'map fuction '
 
 # def square(nums : int) -> int:
@@ -128,10 +127,6 @@
 
 
 
-
-
-
-
 # sample_list = [0,{},[],5]
 # print(any(sample_list))          # True
 # print(all(sample_list))          # False
@@ -139,21 +134,9 @@
 
 
 
-
-
-
-
-
-
-
 # names = ['jasil','yaseen','shakir','ssssss' ]
-
 # result = list(filter(lambda x : any( ch in 'AEIOUaeiou' for ch in x), names))
 # print(result)                                                                    # ['jasil', 'yaseen', 'shakir']
-
-
-
-
 
 
 
@@ -175,18 +158,8 @@
 
 
 
-
-
-
-
-
-
 # 1 - print multiplay of 3 only
 # 2 - 3 multiplay to convert cube
-
-
-
-
 
 # number = [3,6,5,8,9,12,13,9,15]
 
@@ -196,8 +169,6 @@
 
 # result1 = list(map(lambda y : y**3 , result))
 # print("Cube :" , result1)                                                    # Cube : [27, 216, 729, 1728, 729, 3375]
-
-
 
 
 
