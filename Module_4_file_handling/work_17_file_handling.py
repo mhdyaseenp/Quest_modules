@@ -138,16 +138,33 @@
 
 
 
-# Create a new CSV file and write 5 records manually.
+# Create a new CSV file and write 5 records manually. 
+
+with open("sample_data_50.csv",'w')as f:
+    f.write("1,Aman,21,Mumbai\n")
+    f.write("2,Riya,22,Delhi\n")
+    f.write("3,Arjun,20,Kochi\n")
+    f.write("4,Sneha,23,Chennai\n")
+    f.write("5,Vikram,24,Hyderabad\n")
+
 # Copy contents from original file to a new file.
+
 # Append a new record to the existing CSV file.
+
 # Write only names and ages to a new file.
+
 # Save filtered data (Age > 25) into a new CSV.
+
 # Write a CSV file with custom delimiter (e.g., ;).
+
 # Write a file with uppercase names.
+
 # Remove duplicate rows (if any) and write to new file.
+
 # Write sorted data based on Age.
+
 # Write data in reverse order.
+
 # 🔹 Section 4: Data Processing
 # Calculate average age of all records.
 # Find youngest person in the dataset.

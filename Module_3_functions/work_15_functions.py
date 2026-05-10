@@ -541,6 +541,20 @@
 
 """# Section F - Number Logic Function Problems"""
 # 1 Write a function to check whether a number is prime.
+# def prime(num):
+#     if num <=1:
+#         print("not a prime")
+#         return
+#     for i in range(2,num):
+#         if num%i==0:
+#             print("Not a Prime")
+#             return
+#     print("Prime Numner")
+
+# n=int(input("Enter the number :"))
+# prime(n)
+
+
 # 2 Write a function to generate the Fibonacci series up to n terms.
 # 3 Write a function to check whether a number is an Armstrong number.
 # 4 Write a function to return all divisors of a number.

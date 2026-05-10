@@ -446,6 +446,12 @@
 # ============================================================
 
 # 129. Use `map()` to convert a list of temperatures from Celsius to Fahrenheit.
+def cal(c):
+    return (c * 9/5)+32
+temp=[21,33,43,23,33]
+result=list(map(cal,temp))
+print(result)
+
 
 # 130. Use `map()` to calculate squares of a list of numbers.
 
