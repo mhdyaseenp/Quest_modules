@@ -1,0 +1,92 @@
+object oriented progrming
+
+progaming paradigm :- is a method or approach to programming that guide how you write and structure your code 
+
+
+it provide:
+    a specific style or think
+    rules for organizing code
+    technique for solving problems
+    pattern of program control flow
+
+
+common Type of prgming paradigm
+    1. Procedural paradigm
+    2. OOP paradigm
+    3. Functional paradigm
+
+
+
+
+
+Procedural oriented approach
+
+A complex program divided into small indeoendent and reausable part called functions
+each function is written so it can easily work wit other functiond in the program
+uou can send data to a function using arguments and the function can send back a result tothe place whre it was called 
+
+Drawbaks
+the top-down approach makes to the progaming harder to maintraine
+it use the global variable which increase memmory usage is not recomended
+
+
+
+
+
+
+OOPs Instruction:-
+
+entity - datatype
+
+OOPs is a programming style where everithing is grouped into objects to make programming easier to build ,understand,and reuse
+
+Advantages of OOP 
+    provide a clear structure to programs
+    make code to easier to maintain,reuse and debug
+
+
+
+
+Principle of OOPs concepts(pillers of OOPs):-
+    1. Class
+    2. Object
+    3. Encapsulation
+    4. Inheritance
+    5. Pollymorphisam
+    6. Abstraction
+
+
+
+    1. Class :-       
+----------------------
+A class is a user defined entity(data type)that defines the type of data an object can contain and the action it can perform.
+A class is a blueprint for creating objects.
+A class is like a design or plan tht describes:
+    what data an object will have(attributes)
+    what actions an object can do(method)
+it does not hold real data by itself - it only define the structure
+
+                        Class smart phone
+                                |
+                                |
+                    --------------------------
+                    |                         |
+                    |                         |
+
+                
+
+    2. Object :-       
+----------------------
+An Object is created based on that class
+An Object is a real-world instance
+Holds real data 
+Can perform action 
+Every object has its own seperate data
+
+
+
+
+-------self is a parameter it refers to the current obnject(instance) of the class
+
+
+
