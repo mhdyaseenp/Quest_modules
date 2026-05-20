@@ -133,10 +133,13 @@ class Car(Vehicle):                                 #class 2 parent
     def horn(self):
         print("Horn......")
     def test(self):
+        super().test()
         print("Testing Car method....")
         
 class Ev(Car):                                      #class 3 child
     def test(self):
+        super().test()
+        # Vehicle.test(self)
         print("Testing Ev method....")
 
 

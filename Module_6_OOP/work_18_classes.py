@@ -117,11 +117,11 @@
 # Add class attribute seats = 40
 # Update the number of seats to 50
 # Print the updated value.
-class Buss:
-    seats=40
-seat=Buss()
-Buss.seats=50
-print(Buss.seat)
+# class Buss:
+#     seats=40
+# seat=Buss()
+# Buss.seats=50
+# print(Buss.seat)
     
 
 #  9.⁠ ⁠Bank Class
@@ -131,13 +131,29 @@ print(Buss.seat)
 # Add class attribute bank_name = "Federal Bank"
 # Add method display_bank() to print the bank name.
 # Create an object and call the method.
-# 10.⁠ ⁠Movie Class
 
-# Create a class named Movie.
+# class Bank:
+#     bank_name='Fedaral Bank'
+    
+#     def display(self):
+#         print("bank name :",Bank.bank_name)
+# s=Bank()
+# s.display()
+
+# 10.⁠ ⁠Movie Class
+# # Create a class named Movie.
 
 # Add class attribute industry = "Mollywood"
 # Delete the class attribute.
 # Try printing the attribute after deletion.
+
+# class Movie:
+#     industry = "Mollywood"
+# print("before Deletion :",Movie.industry)
+# del Movie.industry
+# print("After Deletion :",Movie.industry)
+
+
 # Advanced Level
 # 11.⁠ ⁠Book Class
 
@@ -148,6 +164,24 @@ print(Buss.seat)
 # show_library()
 # update_library()
 # Update the library name using the method and display the updated value.
+# class Book:
+#     library = "Central Library"
+    
+#     def show_library(self):
+#         print("Librery name is ",Book.library)
+        
+#     def update_library(self,new):
+#         Book.library=new
+        
+# b1=Book()
+# b1.show_library()
+
+# b1.update_library("city librery")
+
+# b1.show_library()
+
+
+
 # 12.⁠ ⁠School Class Attribute Deletion
 
 # Create a class named School.
@@ -156,6 +190,22 @@ print(Buss.seat)
 # Print the attribute.
 # Delete the attribute.
 # Handle the error if the attribute is accessed after deletion.
+
+# class School:
+#     principal = "Ramesh"
+# print("Principle :",School.principal)
+
+# del School.principal
+
+# try:
+#     print("Principle :",School.principal)
+# except AttributeError:
+#     print("Error Principle transfered")
+
+
+
+
+
 # 13.⁠ ⁠TV Class
 
 # Create a class named TV.
@@ -164,6 +214,18 @@ print(Buss.seat)
 # Create three objects.
 # Update the class attribute to "LG"
 # Show that the updated value is reflected in all objects.
+# class TV:
+#      company = "Sony"
+
+# tv1=TV()
+# tv2=TV()
+# tv3=TV()
+
+# print(f"Before\n{tv1.company} {tv2.company} {tv3.company}\n")
+# TV.company='LG'
+# print(f"After\n{tv1.company} {tv2.company} {tv3.company}")
+
+
 # 14.⁠ ⁠University Class
 
 # Create a class named University.
@@ -171,6 +233,24 @@ print(Buss.seat)
 # Add class attribute country = "India"
 # Add method show_country()
 # Create multiple objects and call the method.
+
+# class University:
+#     country = "India"
+#     def show(self):
+#          print("My country is ",University.country)
+         
+# ob1=University()
+# ob1.show()
+
+# ob2=University()
+# ob2.show()
+
+# ob3=University()
+# ob3.show()
+
+
+
+
 # 15.⁠ ⁠Restaurant Class
 
 # Create a class named Restaurant.
@@ -180,6 +260,21 @@ print(Buss.seat)
 # Delete the attribute.
 # Print suitable messages after each operation.
 # Challenge Questions
+
+# class Resturant:
+#     type = "Veg"
+
+# print("Orginal :",Resturant.type)
+
+# Resturant.type="Multi Cuisine"
+# print("Updated  :",Resturant.type)
+
+# del Resturant.type
+# try:
+#     print(Resturant.type)
+# except AttributeError:
+#     print("this one was deleted")
+
 # 16.⁠ ⁠Company Management
 
 # Create a class named Company.
@@ -189,6 +284,7 @@ print(Buss.seat)
 # Display company name
 # Update company name
 # Delete company name
+
 # 17.⁠ ⁠Cricket Team
 
 # Create a class named CricketTeam.
@@ -197,6 +293,7 @@ print(Buss.seat)
 # Create multiple objects.
 # Change the team name to "Kerala"
 # Display the updated value using all objects.
+
 # 18.⁠ ⁠ATM Machine
 
 # Create a class named ATM.
@@ -204,6 +301,22 @@ print(Buss.seat)
 # Add class attribute bank = "SBI"
 # Add method show_bank()
 # Delete the class attribute and check the output.
+# class ATM:
+#     bank = "SBI"
+
+#     def show(self):
+#         print("your bank is ",ATM.bank)
+
+# bn=ATM()
+# bn.show()
+# del ATM.show
+# try:
+#     bn.show()
+# except AttributeError:
+#     print("this one was deleted")
+
+
+
 # 19.⁠ ⁠Airline Class
 
 # Create a class named Airline.
@@ -211,6 +324,14 @@ print(Buss.seat)
 # Add class attribute airline_name = "Air India"
 # Add methods to display and update the airline name.
 # Create two objects and test the methods.
+
+
+
+
+
+
+
+
 # 20.⁠ ⁠Shopping Mall
 
 # Create a class named Mall.
