@@ -113,7 +113,7 @@
 
 # 10. Create a Rectangle class and calculate:
 #    - area
-# #    - perimeter
+# #  - perimeter
 # class Rectangle:
 #     def __init__(self,length,width):
 #         self.length=length
@@ -141,27 +141,137 @@
 
 
 # 12. Create a class using a parameterized constructor.
+# class Student:
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+#         print(f"My namr is {self.name} and iam {self.age} year old")
+    
+# s1=Student("yaseen",34)
 
 # 13. Create a User class where password should not be empty.
+# class User:
+#     def __init__(self,username,password):
+#         self.username=username
+#         self.password=password
+#         if password=="":
+#             print("pass should not be empty")
+
+#         else:
+#             print("Login success full")
+# # s1=User("yasee",'')
+# s2=User("yasee",'djfl')
+
 
 # 14. Create a constructor that validates email format.
+# class Email:
+#     def __init__(self,email):
+#         self.email=email
+#         if '@' in email and '.' in email:
+#             print("Email validated")
+#         else:
+#             print("Email not valdable")
+            
+# s=input("Enter email :")
+# s1=Email(s)
+
 
 # 15. Create a constructor that automatically generates employee IDs.
 
+# from random import*
+# class Employee:
+#     count=randint(101,202)
+#     def __init__(self,name):
+#         self.name=name
+#         Employee.count+=1
+#         self.empid=Employee.count
+#         print(f"Employee name :{self.name}\nEmployee id :{self.empid}\n")
+        
+# c1=Employee('yaseen;')
+# c1=Employee('jasi;')
+# c1=Employee('shakir')
+        
+
+
+
+
+
+
 # 16. Create a Product class that applies GST during object creation.
+# class Product:
+#     def __init__(self,name,price):
+#         self.name=name
+#         self.price=price
+        
+#         gst=price*18/100
+#         total=price+gst
+        
+#         print(f"Product name :{self.name}\nProduct Price :{self.price}\nGst amount :{gst}\nTotal Bill :{total}\n")        
+
+# pd1=Product("Iphone",49000)
+# pd2=Product("lapto",149000)
+# pd2=Product("chai",12)
+
 
 # 17. Create a Vehicle class that stores:
 #    - owner name
 #    - vehicle number
 #    - insurance expiry
 
+# class Vehicle:
+#     def __init__(self, owner_name,vehicle_number,insurance_expiry):
+#         self.owner_namea=owner_name
+#         self.vehcle_number=vehicle_number
+#         self.insurance=insurance_expiry
+    
+#     def display(self):
+#         print(f"Owner name :{self.owner_namea}\nVehicle Number :{self.vehcle_number}\nInsurance Expiry date :{self.insurance}\n")
+
+# s1=Vehicle("yaseen",'KL 32 H 8372','June 12 2027')
+# s1.display()
+
+
 # 18. Create a LibraryBook class with constructor-based initialization.
+# class LibreryBook:
+#     def __init__(self,title,author,price):
+#         self.author=author
+#         self.title=title
+#         self.price=price
+
+#         print(f"Title       :{self.title}\nAuthor name :{self.author}\nPrice       :{self.price}\n")
+        
+# c1=LibreryBook("jungle book",'kunjappu',599)
+# c1=LibreryBook("Harry Potter",'Henry',2399)
+# c1=LibreryBook("Mango tree",'Babuu',359)
+
+
 
 # 19. Create a Course class and enroll students using constructors.
+# class Course:
+#     def __init__(self,course,name):
+#         self.name=name
+#         self.course=course
+#         print(f"{self.name} enrolled in {self.course}")
+
+# s1=Course("Python","Sreeraj")
+# s1=Course("Java","Sneha")
 
 # 20. Create a FoodOrder class that calculates total bill automatically.
+# class FooodOrder:
+#     def __init__(self,item,price):
+#         self.item=item
+#         self.price=price
+        
+#         self.gst=self.price*0.18
+#         self.total=self.price+self.gst
+        
+#         print("Food item :",self.item)
+#         print("Food Price :",self.total)
+#         print("Food Price on Delivery:",self.total+50)
 
-# SELF AND ATTRIBUTE QUESTIONS
+# f1=FooodOrder("pasta",349)
+
+'# SELF AND ATTRIBUTE QUESTIONS'
 
 # 21. Demonstrate the use of self.
 
