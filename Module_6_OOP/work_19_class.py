@@ -280,22 +280,162 @@
 #    - instance attribute
 
 # 23. Create a company management system using class attributes.
+# class Company:
+#     company_name="Quest"
+#     employee=[]
+#     def __init__(self,e_name,e_pos):
+#         self.position=e_pos
+#         self.name=e_name
+#         Company.employee.append(self)
+#     def display(self):
+#         print("Employe Name :",self.name)
+#         print("Position     :",self.position)
+#         print("Company Name :",Company.company_name)
+#         print()
+        
+#     def display_all_emp(self):
+#         print("All Employe in ",Company.company_name)
+#         print()
+#         for emp in Company.employee:
+#             print(emp.name,"-",emp.position)
+            
+# e1 = Company("Rahul", "Manager")
+# e2 = Company("Aisha", "Developer")
+# e3 = Company("Arun", "Designer")
 
+# e1.display()
+# e2.display()
+# e3.display()
+
+# e1.display_all_emp()
+    
+    
+    
+    
 # 24. Create instance-specific attributes for users.
 
 # 25. Demonstrate local variables inside methods.
+# class Student:
+#     def show(self):
+#         name="Rahul"
+#         mark="101"
+#         print("Name of the student :",name)
+#         print("Mark of the student :",mark)
+# ob=Student()
+# ob.show()
+
 
 # 26. Create a class attribute that tracks total online users.
+# class User:
+#     us_tot=0
+#     def __init__(self,name):
+#         self.name=name
+#         User.us_tot+=1
+#     def displa(self):
+#         print("User Name :",self.name)
+
+#     def total_users(self):
+#         print("Total Online Users :",User.us_tot)
+        
+# u1=User("Jasil")
+# u2=User("Yaseen")
+# u3=User("Shakir")
+# u4=User("Fadil")
+
+# u1.displa()
+# u2.displa()
+# u3.displa()
+# u4.displa()
+# print()
+# u1.total_users()
+        
 
 # 27. Build a login system where each object stores unique user data.
 
+
+# class Login:
+#     def __init__(self,user,passw):
+#         self.user_name=user
+#         self.password=passw
+        
+#     def login(self,user,pwd):
+#         if self.user_name ==user and self.password==pwd:
+#             print("Login success full")
+#         else:
+#             print("Invalid User name or password")
+
+# u1=Login("user123",99877)
+# u2=Login('ud23',6655)
+
+# u2.login('ud23',6655)
+# u2.login('ud23',746655)
+
+
 # 28. Create a shopping cart where products are instance attributes.
+# class Shoping:
+#     def __init__(self,product_name,price,quantity):
+#         self.product=product_name
+#         self.price=price
+#         self.quanatity=quantity
+        
+#     def displat(self):
+#         total=self.quanatity * self.price
+        
+#         print("Product Name     :",self.product)
+#         print("Product Price    :",self.price)
+#         print("Product Quantity :",self.quanatity)
+#         print("Total Bill       :",total,'\n')
+# item1=Shoping("Laptop",45000,1)
+# item2=Shoping("Mouse",450,3)
+
+# item1.displat()
+# item1.displat()
+
 
 # 29. Create a school system using:
 #    - class attribute for school name
 #    - instance attribute for student details
 
+# class School:
+#     school_name="JDT"
+#     def __init__(self,name,age,course):
+#         self.name=name
+#         self.age=age
+#         self.course=course
+        
+#     def details(self):
+#         print("School Name    :",School.school_name)
+#         print("--------------------------")
+#         print("Student Name   :",self.name)
+#         print("Student Age    :",self.age)
+#         print("Student Course :",self.course,'\n\n')
+        
+# s1=School("yaseen",21,"Python")
+# s2=School("Jasil",22,"Java")
+# s3=School("Sree",25,"Dotnet")
+
+# s1.details()
+# s2.details()
+# s3.details()
+        
+
 # 30. Create a weather app object storing city-wise temperature data.
+# class Wether:
+#     def __init__(self,city,temprature):
+#         self.city=city
+#         self.tem=temprature
+#     def disp(self):
+#         print("City       :",self.city)
+#         print("Temprature :",self.tem,'°C\n')
+
+# city1 = Wether("Calicut", 32)
+# city2 = Wether("Kochi", 30)
+# city3 = Wether("Delhi", 40)
+
+# city1.disp()
+# city2.disp()
+# city3.disp()
+
 
 # ATTRIBUTE HANDLING FUNCTIONS
 
