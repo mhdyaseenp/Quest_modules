@@ -440,10 +440,37 @@
 # ATTRIBUTE HANDLING FUNCTIONS
 
 # 31. Use getattr() to access object properties dynamically.
+# class Student:
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+        
+# s1=Student("yaseen",21)
+# # attribute = input("Enter attribute name: ")
+# # value = getattr(s1, attribute, "Attribute not found")
 
-# 32. Use setattr() to update employee salary.
+# value = setattr(s1, 'year', "8758")
+# print("Value:",s1.year)
+
 
 # 33. Use hasattr() to validate whether an object contains a field.
+# class Employee:
+#     def __init__(self, name, salary):
+#         self.name = name
+#         self.salary = salary
+# emp1 = Employee("Yaseen", 50000)
+
+# # Check if attributes exist
+# if hasattr(emp1, "name"):
+#     print("Name field exists")
+
+# if hasattr(emp1, "salary"):
+#     print("Salary field exists")
+
+# if hasattr(emp1, "department"):
+#     print("Department field exists")
+# else:
+#     print("Department field does not exist")
 
 # 34. Use delattr() to remove an object attribute.
 

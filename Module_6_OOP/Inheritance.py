@@ -186,7 +186,7 @@
 #     def action(self):
 #         print("Plays Guitar")
 
-# # class Student(Mucican,SportsPerson):                 #method resolution order (MRO) which one on left it will call if a same method called for both parents   // c3 linerar algorithamis used
+# # class Student(Mucican,SportsPerson):                 #method resolution order (MRO) which one on left it will call if a same method called for both parents   // c3 linerarazation algorithamis used
 # class Student(SportsPerson,Mucican):                   #method resolution order (MRO) which one on left it will call if a same method called for both parents
 #     def study(self):
 #         print("Studies in college")
@@ -234,25 +234,25 @@
 'Hybrid Inheritance'
 
 
-# class Vehicle:
-#     def fuel(self):
-#         print("Vehcle use some fuel tuype")
+class Vehicle:
+    def fuel(self):
+        print("Vehcle use some fuel tuype")
         
-# class Car (Vehicle):
-#     def wheels(self):
-#         print("Car has 4 wheels.")
+class Car (Vehicle):
+    def wheels(self):
+        print("Car has 4 wheels.")
         
-# class Motorcycle(Vehicle):
-#     def wheels(self):
-#         print("Motorcycle has 2 wheels")
+class Motorcycle(Vehicle):
+    def wheels(self):
+        print("Motorcycle has 2 wheels")
         
-# class ElectricCar(Car):
-#     def battery(self):
-#         print("Electric car uses lithium battery")
+class ElectricCar(Car):
+    def battery(self):
+        print("Electric car uses lithium battery")
         
-# class ElectricMotorecycle(Motorcycle):
-#     def battery(self):
-#         print("Electric Motorcycle use litium battery")
+class ElectricMotorecycle(Motorcycle):
+    def battery(self):
+        print("Electric Motorcycle use litium battery")
     
 # ac=ElectricCar()
 # ac.battery()
@@ -266,40 +266,41 @@
 
 
 
-
+print()
+print()
 
 
 # apps chid class ,fooddelivery 
 
 # questin
 
-# class User:
-#     def login(self):
-#         print("login succsesful...")
+class User:
+    def login(self):
+        print("login succsesful...")
           
-#     def order(self):
-#         print("Order Your foood...")
+    def order(self):
+        print("Order Your foood...")
     
-#     def order_copleat(self):
-#         print("Order completed ☑️")
+    def order_copleat(self):
+        print("Order completed ☑️")
           
-# class Shop:
-#     def food(self):
-#         print("Selct an food \n1. Biriyani\n2. Mandi")
+class Shop:
+    def food(self):
+        print("Selct an food \n1. Biriyani\n2. Mandi")
             
-# class Delvery_partner:
-#     def location(self):
-#         print("Order out of delivery")
+class Delvery_partner:
+    def location(self):
+        print("Order out of delivery")
         
-#     def deliverd(self):
-#         print("Order elivered succesfully ✅")
+    def deliverd(self):
+        print("Order elivered succesfully ✅")
 
-# class Swiggy(Shop,Delvery_partner,User):
-#     def paymet(self):
-#         print("please compleate your payment")
+class Swiggy(Shop,Delvery_partner,User):
+    def paymet(self):
+        print("please compleate your payment")
         
-#     def paymet_compleated(self):
-#         print("payment compleated Successfully✅")
+    def paymet_compleated(self):
+        print("payment compleated Successfully✅")
         
 # cp=Swiggy()
 

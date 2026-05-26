@@ -12,7 +12,7 @@
 # class Operator:
 #     def add(self,a,b):
 #         return a+b
-#     def mult(selb,f,d):
+#     def mult(selb,f,d):u
 #         return f*d
     
 # o1=Operator()
