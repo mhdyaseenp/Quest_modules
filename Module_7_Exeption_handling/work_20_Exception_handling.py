@@ -10,9 +10,9 @@
 # - assert
 # - Difference between raise and assert
 
-# -----------------------------------------------------
-# LEVEL 1 - BEGINNER
-# -----------------------------------------------------
+#|---------------------------------------------------------|
+#|                    LEVEL 1 - BEGINNER                   |
+#|---------------------------------------------------------|
 
 # 1. Safe Division Calculator
 # Create a program that takes two numbers from the user and performs division.
@@ -244,3 +244,4 @@
 # 60. Create a production-ready user registration system with validation, raise, and assertions.
 
 # END OF LAB SHEET
+ 
