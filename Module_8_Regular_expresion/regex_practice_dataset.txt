@@ -1,0 +1,174 @@
+
+=============================
+EMPLOYEE DATABASE SAMPLE
+=============================
+
+Employee ID: EMP001
+Name: Rahul Sharma
+Email: rahul.sharma@gmail.com
+Alternate Email: rahul_123@yahoo.in
+Phone: +91-98765-43210
+DOB: 15/08/1998
+Salary: ₹45000
+Password: Rahul@123
+
+--------------------------------
+
+Employee ID: EMP002
+Name: Priya Menon
+Email: priya.menon@company.com
+Phone: +91-87654-32109
+DOB: 22-05-1997
+Salary: ₹52000
+Password: Priya#2025
+
+--------------------------------
+
+Employee ID: EMP003
+Name: Arun K
+Email: arun.k@outlook.com
+Phone: +91-76543-21098
+DOB: 03/11/1995
+Salary: ₹60000
+Password: ARun$789
+
+--------------------------------
+
+Customer Details
+
+Customer ID: CUST101
+Name: John Mathew
+Email: johnmathew@gmail.com
+Phone: +91-62389-67951
+Address: Kochi, Kerala - 682001
+
+Customer ID: CUST102
+Name: Fathima P
+Email: fathima.p@gmail.com
+Phone: +91-98765-11111
+Address: Calicut, Kerala - 673001
+
+--------------------------------
+
+Website URLs
+
+https://www.google.com
+https://github.com
+https://www.linkedin.com/in/sreerajmr
+http://localhost:8000
+
+--------------------------------
+
+IP Addresses
+
+192.168.1.10
+127.0.0.1
+10.10.0.5
+172.16.254.1
+
+--------------------------------
+
+Credit Card Numbers
+
+4532-1234-5678-9876
+5123-4567-8901-2345
+3782-822463-10005
+
+--------------------------------
+
+PAN Numbers
+
+ABCDE1234F
+PQRSX5678Y
+LMNOP9876Q
+
+--------------------------------
+
+Vehicle Numbers
+
+KL-07-AB-1234
+KL-01-CD-5678
+MH-12-EF-9876
+
+--------------------------------
+
+Usernames
+
+sreeraj_mr
+john123
+python_dev
+django_master
+user2025
+
+--------------------------------
+
+Passwords
+
+Admin@123
+Python#2025
+Welcome_123
+Django$789
+Pass@Word123
+
+--------------------------------
+
+Dates
+
+01/01/2025
+15-08-2024
+31/12/2023
+2025-06-01
+
+--------------------------------
+
+Product Codes
+
+PROD-1001
+PROD-1002
+PROD-2050
+ITEM-9999
+
+--------------------------------
+
+Amounts
+
+₹450
+₹1200.50
+₹99999
+$250
+€100
+
+--------------------------------
+
+Random Text
+
+The quick brown fox jumps over the lazy dog.
+Python is a powerful programming language.
+Regular expressions are useful for data extraction.
+Call me at +91-62389-67951 or email me at sreeraj.dev@gmail.com
+
+--------------------------------
+
+Invalid Data (For Validation Practice)
+
+Phone: 987654321
+Phone: +91987654321
+Phone: 1234567890123
+
+Email: test@gmail
+Email: @gmail.com
+Email: user@.com
+
+Password: abc
+Password: 123456
+Password: password
+
+PAN: ABC12345F
+PAN: 1234ABCDE
+
+Vehicle: KL07AB1234
+Vehicle: KL-1234-AB
+
+--------------------------------
+END OF FILE
+--------------------------------

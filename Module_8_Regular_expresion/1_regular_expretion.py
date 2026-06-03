@@ -14,6 +14,9 @@ import re
 # print(result.group())                                             #372
 
 
+#if there is no matching character group doesnot work its will be an error
+
+
 """# findall()"""
 # Return a list of all non-overlapping matches in the string.
 
@@ -26,18 +29,18 @@ import re
 
 
 
-"""# findall()"""
+"""# match()"""
 #Try to apply the pattern at the start of the string, returning a Match object, or None if no match was found. 
 
 # data='my 248783 phonr number is 9037279877'                     #none
-# data='83784 my 248783 phonr number is 9037279877'               #none
+# data='83784 my 248783 phonr number is 9037279877'               #True
 # # pattern= r'\d\d'
 # pattern= r'\d\d'
 # result3=re.match(pattern,data)
 # print(result3.group())                                           #83
 
 
-
+"""charecter classes"""
 
 """\d"""
 # any single digit(0-9)
@@ -121,3 +124,11 @@ import re
 # pattern=r"\+91 \d{5} \d{5}"
 # res=(re.findall(pattern,data))
 # print(res)
+
+
+
+
+
+
+
+
