@@ -1,6 +1,5 @@
-
 =============================
-EMPLOYEE DATABASE SAMPLE
+  EMPLOYEE DATABASE SAMPLE
 =============================
 
 Employee ID: EMP001
@@ -170,5 +169,5 @@ Vehicle: KL07AB1234
 Vehicle: KL-1234-AB
 
 --------------------------------
-END OF FILE
+  END OF FILE
 --------------------------------

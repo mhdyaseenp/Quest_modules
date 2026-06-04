@@ -77,8 +77,123 @@ import re
 
 
 
-test_str='a ab abc abbc abbcc abbbccc abbbcccc'
-# result=re.findall(r'a\w*',test_str)                 #['a', 'ab', 'abc', 'abbc', 'abbcc', 'abbbccc', 'abbbcccc']
-# result=re.findall(r'a\w+',test_str)                 #['ab', 'abc', 'abbc', 'abbcc', 'abbbccc', 'abbbcccc']
-result=re.findall(r'a\w?',test_str)                 #['a', 'ab', 'ab', 'ab', 'ab', 'ab', 'ab']
-print(result)
+# test_str='a ab abc abbc abbcc abbbccc abbbcccc'
+# # result=re.findall(r'a\w*',test_str)                 #['a', 'ab', 'abc', 'abbc', 'abbcc', 'abbbccc', 'abbbcccc']
+# # result=re.findall(r'a\w+',test_str)                 #['ab', 'abc', 'abbc', 'abbcc', 'abbbccc', 'abbbcccc']
+# result=re.findall(r'a\w?',test_str)                 #['a', 'ab', 'ab', 'ab', 'ab', 'ab', 'ab']
+# print(result)
+
+
+
+
+
+
+
+
+
+
+# data ='My  name is yaseen.Ia 23  e3e353 m from Malappuram, My phonr number3 is 9037279877 ✅😎'
+
+# pattern=r'[a-z]'                              #small leters onlt
+# pattern=r'[A-Z]'                              #Capital leters onlt
+# pattern=r'[A-z]'                              #small and capital
+# pattern=r'[A-Za-z]'                           #small and Capital
+# pattern=r'[0-9]{2}'                           #Numbers                              ['23', '35', '03', '72', '77']
+# pattern=r'[0-9A-z]{3}'                        #Numbers And carectes of paired 3     ['nam', 'yas', 'een', '23v', 'e3e', '353', 'fro', 'Mal', 'app', 'ura', 'pho', 'num', 'ber', '903', '727', '987']
+
+
+"""not [^]"""
+# pattern=r'[^0-9A-Z]'                          #Not digits and Capital letters     
+# pattern=r'[^0-9A-z]'                          #Not digits , Capital and small letters   ,get white spaces and  imojes
+
+
+"""start(  r'^.....' ))  end( r'....$')"""
+# pattern= r"^M"                                #startingil M indoo ennn chak chayyan ,non charecter annenkil empty set [] 
+# pattern= r"😎$"                               #to check the given character is apperar at the end of the data
+
+
+# result=re.findall(pattern,data)
+# print(result)
+
+
+
+
+
+"""Inbuild Functions"""
+
+"""compile()"""
+
+
+# data ='My  name is yaseen.Ia 23  e3e353 m from Malappuram, My phonr number3 is 9037279877 ✅😎'
+# pattern=r'\d+'
+
+# num=re.compile(pattern)
+
+# result=num.findall(data)
+# print(result)
+
+
+
+
+
+# data ='My  name is yaseen.Ia 23  e3e353 m from Malappuram, My phonr number3 is 9037279877 ✅😎'
+# name=r'yaseen'
+
+# name_pattern=re.compile(name)
+
+# result=name_pattern.findall(data)
+# print(result)
+
+
+
+
+
+
+
+
+
+
+"""sub()"""
+
+# data ='My  name is yaseen.Ia 23  e3e353 m from Malappuram, My phonr number3 is 9037279877 ✅😎'
+
+# # new_data= re.sub(r" ","💕",data)                                 #replace the space into imoji    My💕💕name💕is💕yaseen.Ia💕23💕💕e3e353💕m💕from💕Malappuram,💕My💕phonr💕number3💕is💕9037279877💕✅😎
+# # new_data= re.sub(r" ","_",data)   
+                                                       
+# new_data= re.sub(r" ","✅",data,count=5)                          #replace the first 5 spaces     My✅✅name✅is✅yaseen.Ia✅23  e3e353 m from Malappuram, My phonr number3 is 9037279877 ✅😎                                 
+
+# print(new_data)
+
+
+
+
+
+
+"""subn()"""
+# its in a tuple format 
+
+# data ='My  name is yaseen.Ia 23  e3e353 m from Malappuram, My phonr number3 is 9037279877 ✅😎' 
+                                                       
+# new_data= re.subn(r" ","✅",data)                                  #replace the first 5 spaces    ('My✅✅name✅is✅yaseen.Ia✅23✅✅e3e353✅m✅from✅Malappuram,✅My✅phonr✅number3✅is✅9037279877✅✅😎', 16)
+
+# new_data= re.subn(r" ","✅",data,count=5)                          #replace the first 5 spaces    ('My✅✅name✅is✅yaseen.Ia✅23✅✅e3e353✅m✅from✅Malappuram,✅My✅phonr✅number3✅is✅9037279877✅✅😎', 5)
+
+# print(new_data)
+
+
+
+
+
+"""split()"""
+
+data ='My  name is yaseen.Ia 23  e3e353 m from Malappuram, My phonr number3 is 9037279877 ✅😎' 
+                                                       
+# splited_data= re.split(r"e",data)                                  #['My  nam', ' is yas', '', 'n.Ia 23  ', '3', '353 m from Malappuram, My phonr numb', 'r3 is 9037279877 ✅😎']
+# splited_data= re.split(r"e",data,maxsplit=3)                       #['My  nam', ' is yas', '', 'n.Ia 23  e3e353 m from Malappuram, My phonr number3 is 9037279877 ✅😎']
+
+# print(splited_data)
+
+
+
+
+

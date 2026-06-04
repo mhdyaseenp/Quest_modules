@@ -22,5 +22,25 @@ with open("regex_practice_dataset.txt", "r+") as f:
     print()
     
     
+    #PAN card no
+    result3=re.findall(r"[A-Z]{5}\d{4}[A-Z]",data)
+    print("PAN No :")
+    cont=0
+    for i in result3:
+        cont+=1
+        print(cont," :",i)
+    print()
+    
+    
+    #Email id
+    result4=re.findall(r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$", data)
+    print("Email id's :")
+    cont=0
+    for i in result4:
+        cont+=1
+        print(cont," :",i)
+    print()
+    
+    
     
     
