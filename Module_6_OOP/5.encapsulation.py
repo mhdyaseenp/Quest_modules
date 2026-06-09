@@ -1,8 +1,9 @@
+# data hidding
 # Binding data (variables) and methods (functions) together inside a class and restricting direct access to some data.
 
 
 
-
+# private 
 
 
 
@@ -61,3 +62,79 @@
 
 
 
+# class Bank:
+#     bank_name="SBI"
+    
+#     def __init__(self,acc_no,balence):
+#         self.acc=acc_no
+#         self.__balence=balence
+        
+        
+#     def get__balence(self):
+#         return(f" Current balence :{self.__balence}")
+        
+#     def set__balence(self,amount):
+#         if amount<0:
+#             return "invalid"
+#         else:
+#             self.__balence=amount
+#             return f"New balence :{self.__balence}"
+    
+
+        
+        
+# yaseen=Bank(2879,45000)
+
+
+# print(yaseen.get__balence())
+# yaseen.set__balence(3000)
+# print(yaseen.get__balence())d
+
+
+
+
+
+class Bank:
+    bank_name="SBI"
+    
+    def __init__(self,acc_no,balence):
+        self.acc=acc_no
+        self.__balence=balence
+        
+    @property  
+    def balence(self):
+        return(f" Current balence :{self.__balence}")
+        
+    @balence.setter
+    def balence(self,amount):
+        if amount<0:
+            return "invalid"
+        else:
+            self.balence=amount
+            return f"New balence :{self.__balence}"
+    
+
+        
+        
+yaseen=Bank(2879,45000)
+
+
+print(yaseen.balence)
+yaseen.__balence=3000
+print(yaseen.__balence)
+
+
+
+
+
+
+
+
+
+
+
+# encapsilation
+# data hidding
+
+# abstraction
+# implimentation hidding

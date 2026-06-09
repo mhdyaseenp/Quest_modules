@@ -293,7 +293,7 @@ class Delvery_partner:
         print("Order out of delivery")
         
     def deliverd(self):
-        print("Order elivered succesfully ✅")
+        print("Order delivered succesfully ✅")
 
 class Swiggy(Shop,Delvery_partner,User):
     def paymet(self):
@@ -322,7 +322,7 @@ class Swiggy(Shop,Delvery_partner,User):
 #                                         # please compleate your payment
 #                                         # payment compleated Successfully✅
 #                                         # Order out of delivery
-#                                         # Order elivered succesfully ✅
+#                                         # Order delivered succesfully ✅
 
 
 
