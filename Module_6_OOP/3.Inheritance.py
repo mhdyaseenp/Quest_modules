@@ -186,8 +186,8 @@
 #     def action(self):
 #         print("Plays Guitar")
 
-# # class Student(Mucican,SportsPerson):                 #method resolution order (MRO) which one on left it will call if a same method called for both parents   // c3 linerarazation algorithamis used
-# class Student(SportsPerson,Mucican):                   #method resolution order (MRO) which one on left it will call if a same method called for both parents
+# class Student(Mucican,SportsPerson):                     #method resolution order (MRO) which one on left it will call if a same method called for both parents   // c3 linerarazation algorithamis used
+# # class Student(SportsPerson,Mucican):                   #method resolution order (MRO) which one on left it will call if a same method called for both parents
 #     def study(self):
 #         print("Studies in college")
         

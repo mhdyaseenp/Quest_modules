@@ -504,7 +504,7 @@
 
 # 45. Create a payment gateway system using inheritance.
 
-# MULTILEVEL INHERITANCE
+"""# MULTILEVEL INHERITANCE"""
 
 # 46. Create:
 #    - Animal → Mammal → Dog

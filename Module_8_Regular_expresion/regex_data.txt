@@ -1,0 +1,43 @@
+EMPLOYEE RECORDS DUMP
+
+EMP001 | Rahul Sharma | rahul.sharma@gmail.com | +91-9876543210 | DOB: 12/05/1998 | Salary: ₹45000 | IP: 192.168.1.10
+EMP002 | Anjali Nair | anjali.nair@yahoo.com | +91-9123456780 | DOB: 25/11/1997 | Salary: ₹52000 | IP: 10.0.0.25
+EMP003 | Arun Kumar | arun_kumar@outlook.com | +91-9988776655 | DOB: 03/08/1995 | Salary: ₹61000 | IP: 172.16.5.100
+
+CUSTOMER ORDERS
+
+ORD-1001 | Customer: Suresh | Email: suresh123@gmail.com | Phone: +91-9876501234 | Amount: ₹2499.99 | Date: 2026-05-10
+ORD-1002 | Customer: Meera | Email: meera.nair@company.org | Phone: +91-9876505678 | Amount: ₹5499.50 | Date: 2026-05-12
+ORD-1003 | Customer: John | Email: john.doe@sample.net | Phone: +91-9988001122 | Amount: ₹999.00 | Date: 2026-05-15
+
+LOGIN ACTIVITY
+
+User: admin01 | Password: Admin@123
+User: trainer02 | Password: Python#2026
+User: student03 | Password: Learn$Regex1
+
+WEBSITE LOGS
+
+https://www.amazon.in/product/123
+https://github.com/python/cpython
+http://demo.testsite.org/login
+https://www.linkedin.com/in/sample-user
+
+SERVER LOGS
+
+[ERROR] 2026-06-01 10:15:20 - Connection timeout from 192.168.0.101
+[INFO] 2026-06-01 11:00:05 - Login success for user admin01
+[WARNING] 2026-06-01 11:15:40 - Invalid email test@@gmail.com
+
+PAYMENT DETAILS
+
+TXN10001 | UPI: rahul@oksbi | Amount: ₹1200
+TXN10002 | UPI: anjali@ybl | Amount: ₹850
+TXN10003 | UPI: store@paytm | Amount: ₹5400
+
+MISC DATA
+
+Aadhar: 4567 8901 2345
+PAN: ABCDE1234F
+GSTIN: 32ABCDE1234F1Z5
+PIN Codes: 682001, 560001, 110001

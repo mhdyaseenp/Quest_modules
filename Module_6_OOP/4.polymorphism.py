@@ -12,7 +12,7 @@
 # class Operator:
 #     def add(self,a,b):
 #         return a+b
-#     def mult(selb,f,d):u
+#     def mult(self,b,f,d):
 #         return f*d
     
 # o1=Operator()
@@ -38,19 +38,20 @@
 #         print(self.a+self.b)
     
 # # ob=Operation()
-# ob=Operation(2,4)
+# ob=Operation(2,3)
 
 
 # 'Method Ovrriding'
 # '-----------------------------------------------------------'
-# class Vehicle :
-#     def start(self):
-#         print("Vrhicle is starting")
+class Vehicle :
+    def start(self):
+        print("Vrhicle is starting")
         
-# class Bike(Vehicle):
-#     def start(self):
-#         super().start()
-#         print("Bike Starting with self Button")
+class Bike(Vehicle):
+    def start(self):
+        super().start()
+        # Vehicle.start(self)
+        print("Bike Starting with self Button")
         
-# b=Bike()
-# b.start()
+b=Bike()
+b.start()

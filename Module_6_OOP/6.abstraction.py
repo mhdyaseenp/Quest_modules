@@ -31,7 +31,8 @@ class Bike(Vehcle):
         self.price=price
         print("Bike has disc breaks")
         
-    # def accelareto(self):
-    #     print("Bike has good accelareto")
+    def accelareto(self):
+        print("Bike has good accelareto")
         
 yas=Bike()
+yas.breaks(5000)
