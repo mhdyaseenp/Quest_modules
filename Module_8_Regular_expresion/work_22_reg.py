@@ -47,3 +47,31 @@
 # 3. Create a password strength checker.
 # 4. Create a data masking utility for sensitive information.
 # 5. Build a customer data validation script.
+
+
+import re
+
+with open("regex_data.txt", "r+") as f:
+    data=f.read()
+    
+    
+    #emails 
+    result= re.findall(r'\b[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\b', data)
+    # result= re.findall(r'[a-zA-Z0-9]+@gmail\.com', data)
+    
+    print("All Email  :")
+    cont=0
+    for i in result:
+        cont+=1
+        print(cont," :",i)
+    
+    
+    #emails 
+    result1= re.findall(r'\+\d+[-]\d{10}', data)
+    print("All Phone number in indian format  :")
+    cont=0
+    for i in result1:
+        cont+=1
+        print(cont," :",i)
+    
+    

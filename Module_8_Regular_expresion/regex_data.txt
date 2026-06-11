@@ -17,10 +17,6 @@ User: trainer02 | Password: Python#2026
 User: student03 | Password: Learn$Regex1
 
 WEBSITE LOGS
-
-https://www.amazon.in/product/123
-https://github.com/python/cpython
-http://demo.testsite.org/login
 https://www.linkedin.com/in/sample-user
 
 SERVER LOGS
