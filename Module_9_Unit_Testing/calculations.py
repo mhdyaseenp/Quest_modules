@@ -39,3 +39,11 @@ def div(a,b):
     return a/b
 
 # print(div(-10,-5))
+
+
+
+
+
+
+def get_data():
+    None
