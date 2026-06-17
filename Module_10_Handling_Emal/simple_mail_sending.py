@@ -21,7 +21,6 @@ import smtplib
 from email.mime.text import MIMEText
 
 
-
 sender_emial='mhdyaseenporoli@gmail.com'
 app_pass='ckuf uchl xrbr cyoy'
 
